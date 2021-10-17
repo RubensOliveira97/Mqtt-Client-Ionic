@@ -1,0 +1,7 @@
+{
+  "name": "mqtt-project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
