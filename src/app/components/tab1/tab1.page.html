@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Select your pump
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div>
+    <ion-row>
+      <ion-label>KSB</ion-label>
+      <ion-img (click)="changePump('1')" [ngClass]= 'pump1Class' src='./assets/pump.jpg'></ion-img>
+    </ion-row>
+
+    <ion-row>
+      <ion-label>WEG</ion-label>
+      <ion-img (click)="changePump('2')"  [ngClass]= 'pump2Class' src='./assets/pump.jpg'></ion-img>
+    </ion-row>
+
+
+  </div>
+
+</ion-content>

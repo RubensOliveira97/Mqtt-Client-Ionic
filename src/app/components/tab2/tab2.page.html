@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Pump Control
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <ion-row class='row'>
+
+    <ion-button (click)='pubTopic()'>{{buttonText}}</ion-button>
+
+
+
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <ion-label >Pump Speed</ion-label>
+  </ion-row>
+  <ion-row>
+
+    <ion-range (ionChange)="sliderMove($event)"min="0" max="255" color="secondary">
+      <ion-label slot="start">0</ion-label>
+      <ion-label slot="end">100%</ion-label>
+    </ion-range>
+  </ion-row>
+
+
+</ion-content>
